@@ -1,0 +1,2619 @@
+2015-07-27 14:12:22 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Request.php:1212
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Request.php(1194): yii\web\Request->loadCookies()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/web/Request.php(1280): yii\web\Request->getCookies()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/web/Request.php(1259): yii\web\Request->loadCsrfToken()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(273): yii\web\Request->getCsrfToken()
+#4 /var/www/html/basic/views/layouts/main.php(19): yii\helpers\BaseHtml::csrfMetaTags()
+#5 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#6 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#7 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\SiteController))
+#8 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#9 /var/www/html/basic/controllers/SiteController.php(52): yii\base\Controller->render('index')
+#10 [internal function]: app\controllers\SiteController->actionIndex()
+#11 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#14 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#15 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2015-07-27 14:12:21 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '51631'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438006341.888
+    'REQUEST_TIME' => 1438006341
+]
+2015-07-27 14:51:51 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 14:51:51 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'sample/default/'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => '4lh9ea2eib8rb614h1n8u04mb2'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=4lh9ea2eib8rb614h1n8u04mb2; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '56560'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=sample/default/'
+    'REQUEST_URI' => '/basic/web/index.php?r=sample/default/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438008711.689
+    'REQUEST_TIME' => 1438008711
+]
+2015-07-27 14:52:06 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 14:52:06 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'sample/default/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'mdflsuvprinbufeh6r40p4da84'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=mdflsuvprinbufeh6r40p4da84; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '56594'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=sample/default/index'
+    'REQUEST_URI' => '/basic/web/index.php?r=sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438008726.169
+    'REQUEST_TIME' => 1438008726
+]
+2015-07-27 14:52:52 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 14:52:52 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'sample/default/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'uha5ea6qpvhbq96c3vmsfdos97'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=uha5ea6qpvhbq96c3vmsfdos97; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '56696'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=sample/default/index'
+    'REQUEST_URI' => '/basic/web/index.php?r=sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438008772.46
+    'REQUEST_TIME' => 1438008772
+]
+2015-07-27 15:01:12 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 15:01:12 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'vgtc6j567hn7aul5grq416dt83'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=vgtc6j567hn7aul5grq416dt83; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57730'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/sample/default/index'
+    'PATH_TRANSLATED' => '/var/www/html/sample/default/index'
+    'PHP_SELF' => '/basic/web/index.php/sample/default/index'
+    'REQUEST_TIME_FLOAT' => 1438009272.87
+    'REQUEST_TIME' => 1438009272
+]
+2015-07-27 15:01:50 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 15:01:50 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => '6ici7sgiofrta7gr2slv4bvmm1'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=6ici7sgiofrta7gr2slv4bvmm1; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57806'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/sample/default/index'
+    'PATH_TRANSLATED' => '/var/www/html/sample/default/index'
+    'PHP_SELF' => '/basic/web/index.php/sample/default/index'
+    'REQUEST_TIME_FLOAT' => 1438009310.228
+    'REQUEST_TIME' => 1438009310
+]
+2015-07-27 15:02:05 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 15:02:05 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'v5e7918r6g2mgd1tqrao30s6i6'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=v5e7918r6g2mgd1tqrao30s6i6; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57844'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/sample/default/index'
+    'PATH_TRANSLATED' => '/var/www/html/sample/default/index'
+    'PHP_SELF' => '/basic/web/index.php/sample/default/index'
+    'REQUEST_TIME_FLOAT' => 1438009325.725
+    'REQUEST_TIME' => 1438009325
+]
+2015-07-27 15:02:06 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 15:02:06 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => '2u3rkl3e8e9gc0ac02r3nh2g64'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=2u3rkl3e8e9gc0ac02r3nh2g64; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57846'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/sample/default/index'
+    'PATH_TRANSLATED' => '/var/www/html/sample/default/index'
+    'PHP_SELF' => '/basic/web/index.php/sample/default/index'
+    'REQUEST_TIME_FLOAT' => 1438009326.763
+    'REQUEST_TIME' => 1438009326
+]
+2015-07-27 15:03:16 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 15:03:16 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'rml1mrch6ouupotm05pks84at7'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=rml1mrch6ouupotm05pks84at7; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57997'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/sample/default/index'
+    'PATH_TRANSLATED' => '/var/www/html/sample/default/index'
+    'PHP_SELF' => '/basic/web/index.php/sample/default/index'
+    'REQUEST_TIME_FLOAT' => 1438009396.869
+    'REQUEST_TIME' => 1438009396
+]
+2015-07-27 15:03:32 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 15:03:32 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'ma49572dukl9llhijssh1nc1o3'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=ma49572dukl9llhijssh1nc1o3; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58036'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/sample/default/index'
+    'PATH_TRANSLATED' => '/var/www/html/sample/default/index'
+    'PHP_SELF' => '/basic/web/index.php/sample/default/index'
+    'REQUEST_TIME_FLOAT' => 1438009412.52
+    'REQUEST_TIME' => 1438009412
+]
+2015-07-27 15:05:09 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 15:05:09 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'k8uvf5nnln9g9nmg0160qcejm0'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=k8uvf5nnln9g9nmg0160qcejm0; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58261'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/sample/default/index'
+    'PATH_TRANSLATED' => '/var/www/html/sample/default/index'
+    'PHP_SELF' => '/basic/web/index.php/sample/default/index'
+    'REQUEST_TIME_FLOAT' => 1438009509.542
+    'REQUEST_TIME' => 1438009509
+]
+2015-07-27 15:09:03 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sample/default/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('sample/default/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 15:09:03 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'hd7o1oqfnirh0uijpj0g4q80e6'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=hd7o1oqfnirh0uijpj0g4q80e6; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '58758'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/sample/default/index'
+    'PATH_TRANSLATED' => '/var/www/html/sample/default/index'
+    'PHP_SELF' => '/basic/web/index.php/sample/default/index'
+    'REQUEST_TIME_FLOAT' => 1438009743.971
+    'REQUEST_TIME' => 1438009743
+]
+2015-07-27 15:43:03 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /var/www/html/basic/vendor/yiisoft/yii2/captcha/Captcha.php:180
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\caaptcha\\CCap...'Array, Array)
+#5 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\caaptcha\\CCap...'Array, Array)
+#6 /var/www/html/basic/vendor/yiisoft/yii2/base/Widget.php(96): yii\BaseYii::createObject(Array)
+#7 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(665): yii\base\Widget::widget(Array)
+#8 /var/www/html/basic/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\caaptcha\\CCap...'Array)
+#9 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#11 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/basic/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2015-07-27 15:43:03 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'aipielqgin5t5o9vbdb7i5c3n0'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8883/basic/web/site/about'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=aipielqgin5t5o9vbdb7i5c3n0; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '35105'
+    'REDIRECT_URL' => '/basic/web/site/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/site/contact'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438011783.696
+    'REQUEST_TIME' => 1438011783
+]
+2015-07-27 15:43:14 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /var/www/html/basic/vendor/yiisoft/yii2/captcha/Captcha.php:180
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\caaptcha\\CCap...'Array, Array)
+#5 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\caaptcha\\CCap...'Array, Array)
+#6 /var/www/html/basic/vendor/yiisoft/yii2/base/Widget.php(96): yii\BaseYii::createObject(Array)
+#7 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(665): yii\base\Widget::widget(Array)
+#8 /var/www/html/basic/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\caaptcha\\CCap...'Array)
+#9 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#11 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/basic/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2015-07-27 15:43:14 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'gdran2t8298louaheprr6ba354'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8883/basic/web/site/about'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=gdran2t8298louaheprr6ba354; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '35118'
+    'REDIRECT_URL' => '/basic/web/site/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/site/contact'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438011794.639
+    'REQUEST_TIME' => 1438011794
+]
+2015-07-27 15:43:20 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index/site/contact".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('index/site/cont...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 15:43:20 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'gdran2t8298louaheprr6ba354'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=gdran2t8298louaheprr6ba354; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '35148'
+    'REDIRECT_URL' => '/basic/web/index/site/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index/site/contact'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438011800.446
+    'REQUEST_TIME' => 1438011800
+]
+2015-07-27 15:43:24 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /var/www/html/basic/vendor/yiisoft/yii2/captcha/Captcha.php:180
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\caaptcha\\CCap...'Array, Array)
+#5 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\caaptcha\\CCap...'Array, Array)
+#6 /var/www/html/basic/vendor/yiisoft/yii2/base/Widget.php(96): yii\BaseYii::createObject(Array)
+#7 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(665): yii\base\Widget::widget(Array)
+#8 /var/www/html/basic/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\caaptcha\\CCap...'Array)
+#9 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#11 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/basic/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2015-07-27 15:43:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => '7238kho8lnuj9ami7sd25h5df3'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=7238kho8lnuj9ami7sd25h5df3; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '35148'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/site/contact'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/site/contact'
+    'PATH_TRANSLATED' => 'redirect:/index.php/contact'
+    'PHP_SELF' => '/basic/web/index.php/site/contact'
+    'REQUEST_TIME_FLOAT' => 1438011804.086
+    'REQUEST_TIME' => 1438011804
+]
+2015-07-27 15:43:29 [127.0.0.1][100][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index/site/contact".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('index/site/cont...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-27 15:43:29 [127.0.0.1][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => '7238kho8lnuj9ami7sd25h5df3'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=7238kho8lnuj9ami7sd25h5df3; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '35186'
+    'REDIRECT_URL' => '/basic/web/index/site/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index/site/contact'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438011809.971
+    'REQUEST_TIME' => 1438011809
+]
+2015-07-27 15:43:30 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /var/www/html/basic/vendor/yiisoft/yii2/captcha/Captcha.php:180
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\caaptcha\\CCap...'Array, Array)
+#5 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\caaptcha\\CCap...'Array, Array)
+#6 /var/www/html/basic/vendor/yiisoft/yii2/base/Widget.php(96): yii\BaseYii::createObject(Array)
+#7 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(665): yii\base\Widget::widget(Array)
+#8 /var/www/html/basic/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\caaptcha\\CCap...'Array)
+#9 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#11 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/basic/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2015-07-27 15:43:30 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'nu35i0m8tpp9vliogm127hebo0'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8883/basic/web/site/about'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=nu35i0m8tpp9vliogm127hebo0; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '35186'
+    'REDIRECT_URL' => '/basic/web/site/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/site/contact'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438011810.497
+    'REQUEST_TIME' => 1438011810
+]
+2015-07-27 16:19:12 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Html' not found' in /var/www/html/basic/themes/default/views/layouts/main.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-07-27 16:19:12 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'u66d7m7dgcvuid9qha2efd5bf6'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=u66d7m7dgcvuid9qha2efd5bf6; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '39763'
+    'REDIRECT_URL' => '/basic/web/sample/default/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438013952.095
+    'REQUEST_TIME' => 1438013952
+]
+2015-07-27 16:50:41 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'default' (T_DEFAULT), expecting identifier (T_STRING)' in /var/www/html/basic/themes/default/views/layouts/main.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-07-27 16:50:41 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN'
+    'PHPSESSID' => 'u66d7m7dgcvuid9qha2efd5bf6'
+    '_identity' => '[\"100\",\"test100key\",2592000]'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=c6qvzFo0-dmoINoMaHOCk8bbtQ27fcoN; PHPSESSID=u66d7m7dgcvuid9qha2efd5bf6; _identity=%5B%22100%22%2C%22test100key%22%2C2592000%5D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '43650'
+    'REDIRECT_URL' => '/basic/web/sample/default/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/sample/default/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438015841.499
+    'REQUEST_TIME' => 1438015841
+]
+2015-07-28 02:35:09 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ','' in /var/www/html/basic/themes/resrve/views/layouts/main.php:43
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-07-28 02:35:09 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '-sTa_wGvmCFLrrupplz4d_g2Pp0yK4fL'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8883/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=-sTa_wGvmCFLrrupplz4d_g2Pp0yK4fL'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57324'
+    'REDIRECT_URL' => '/basic/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/site/login'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438050909.596
+    'REQUEST_TIME' => 1438050909
+]
+2015-07-28 02:35:35 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/basic/themes/resrve/views/layouts/main.php:45
+Stack trace:
+#0 /var/www/html/basic/themes/resrve/views/layouts/main.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/b...', 45, Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#2 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#3 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\SiteController))
+#4 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#5 /var/www/html/basic/controllers/SiteController.php(67): yii\base\Controller->render('login', Array)
+#6 [internal function]: app\controllers\SiteController->actionLogin()
+#7 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#10 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#11 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2015-07-28 02:35:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '-sTa_wGvmCFLrrupplz4d_g2Pp0yK4fL'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8883/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=-sTa_wGvmCFLrrupplz4d_g2Pp0yK4fL'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57331'
+    'REDIRECT_URL' => '/basic/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/site/login'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438050935.257
+    'REQUEST_TIME' => 1438050935
+]
+2015-07-28 02:35:36 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/basic/themes/resrve/views/layouts/main.php:45
+Stack trace:
+#0 /var/www/html/basic/themes/resrve/views/layouts/main.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/b...', 45, Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#2 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#3 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\SiteController))
+#4 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#5 /var/www/html/basic/controllers/SiteController.php(67): yii\base\Controller->render('login', Array)
+#6 [internal function]: app\controllers\SiteController->actionLogin()
+#7 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#10 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#11 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2015-07-28 02:35:36 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '-sTa_wGvmCFLrrupplz4d_g2Pp0yK4fL'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8883/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=-sTa_wGvmCFLrrupplz4d_g2Pp0yK4fL'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57332'
+    'REDIRECT_URL' => '/basic/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/site/login'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438050936.327
+    'REQUEST_TIME' => 1438050936
+]
+2015-07-28 02:35:58 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/html/basic/themes/resrve/views/layouts/main.php:45
+Stack trace:
+#0 /var/www/html/basic/themes/resrve/views/layouts/main.php(45): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/b...', 45, Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#2 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#3 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/var/www/html/b...', Array, Object(app\controllers\SiteController))
+#4 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#5 /var/www/html/basic/controllers/SiteController.php(67): yii\base\Controller->render('login', Array)
+#6 [internal function]: app\controllers\SiteController->actionLogin()
+#7 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#10 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/login', Array)
+#11 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2015-07-28 02:35:58 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '-sTa_wGvmCFLrrupplz4d_g2Pp0yK4fL'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8883/basic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=-sTa_wGvmCFLrrupplz4d_g2Pp0yK4fL'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '57338'
+    'REDIRECT_URL' => '/basic/web/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/site/login'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438050958.785
+    'REQUEST_TIME' => 1438050958
+]
+2015-07-28 16:03:09 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'could not find driver' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(206): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(819): yii\db\Command->prepare(true)
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(392): yii\db\Command->queryInternal('fetchAll', 7)
+#7 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(308): yii\db\Command->queryColumn()
+#8 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(228): yii\db\mysql\Schema->findTableNames('')
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(151): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct(Array)
+#14 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\giii\\compoone..',Array, Array)
+#16 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\giii\\compoone..',Array, Array)
+#17 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(281): yii\BaseYii::createObject(Array)
+#18 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#21 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('/var/www/html/b...', Array)
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#24 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/b...', Array, Object(yii\gii\controllers\DefaultController))
+#25 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(56): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#29 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#31 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'could not find driver' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(206): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(819): yii\db\Command->prepare(true)
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(392): yii\db\Command->queryInternal('fetchAll', 7)
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(308): yii\db\Command->queryColumn()
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(228): yii\db\mysql\Schema->findTableNames('')
+#7 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(151): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct(Array)
+#12 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\giii\\compoone..',Array, Array)
+#14 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\giii\\compoone..',Array, Array)
+#15 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(281): yii\BaseYii::createObject(Array)
+#16 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#19 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('/var/www/html/b...', Array)
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/b...', Array, Object(yii\gii\controllers\DefaultController))
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(56): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#27 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#29 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2015-07-28 16:03:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8883/basic/web/gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '44487'
+    'REDIRECT_URL' => '/basic/web/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/gii/model'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438099389.898
+    'REQUEST_TIME' => 1438099389
+]
+2015-07-28 16:05:23 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'could not find driver' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'dbuser', 'password', NULL)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(206): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(819): yii\db\Command->prepare(true)
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(392): yii\db\Command->queryInternal('fetchAll', 7)
+#7 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(308): yii\db\Command->queryColumn()
+#8 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(228): yii\db\mysql\Schema->findTableNames('')
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(151): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct(Array)
+#14 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\giii\\compoone..',Array, Array)
+#16 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\giii\\compoone..',Array, Array)
+#17 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(281): yii\BaseYii::createObject(Array)
+#18 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#21 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('/var/www/html/b...', Array)
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#24 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/b...', Array, Object(yii\gii\controllers\DefaultController))
+#25 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(56): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#29 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#31 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'could not find driver' in /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /var/www/html/basic/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(206): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(819): yii\db\Command->prepare(true)
+#4 /var/www/html/basic/vendor/yiisoft/yii2/db/Command.php(392): yii\db\Command->queryInternal('fetchAll', 7)
+#5 /var/www/html/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(308): yii\db\Command->queryColumn()
+#6 /var/www/html/basic/vendor/yiisoft/yii2/db/Schema.php(228): yii\db\mysql\Schema->findTableNames('')
+#7 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/Generator.php(151): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /var/www/html/basic/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /var/www/html/basic/vendor/yiisoft/yii2/base/Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct(Array)
+#12 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/basic/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\giii\\compoone..',Array, Array)
+#14 /var/www/html/basic/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\giii\\compoone..',Array, Array)
+#15 /var/www/html/basic/vendor/yiisoft/yii2/widgets/ActiveForm.php(281): yii\BaseYii::createObject(Array)
+#16 /var/www/html/basic/vendor/yiisoft/yii2-gii/generators/model/form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#18 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#19 /var/www/html/basic/vendor/yiisoft/yii2-gii/views/default/view.php(38): yii\base\View->renderFile('/var/www/html/b...', Array)
+#20 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/b...')
+#21 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/b...', Array)
+#22 /var/www/html/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/b...', Array, Object(yii\gii\controllers\DefaultController))
+#23 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 /var/www/html/basic/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(56): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 /var/www/html/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#27 /var/www/html/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#28 /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#29 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2015-07-28 16:05:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '44902'
+    'REDIRECT_URL' => '/basic/web/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/gii/model'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438099523.018
+    'REQUEST_TIME' => 1438099523
+]
+2015-07-28 16:29:59 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "register/".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('register/', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:29:59 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '47943'
+    'REDIRECT_URL' => '/basic/web/register/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/register/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438100999.733
+    'REQUEST_TIME' => 1438100999
+]
+2015-07-28 16:30:20 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "ReservCustomer/".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('ReservCustomer/', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:30:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '47989'
+    'REDIRECT_URL' => '/basic/web/ReservCustomer/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/ReservCustomer/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101020.966
+    'REQUEST_TIME' => 1438101020
+]
+2015-07-28 16:30:31 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reservcustomer/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('reservcustomer/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:30:31 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48012'
+    'REDIRECT_URL' => '/basic/web/reservcustomer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/reservcustomer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101031.201
+    'REQUEST_TIME' => 1438101031
+]
+2015-07-28 16:30:35 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reservcustomer/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('reservcustomer/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:30:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48012'
+    'REDIRECT_URL' => '/basic/web/reservcustomer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/reservcustomer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101035.647
+    'REQUEST_TIME' => 1438101035
+]
+2015-07-28 16:30:43 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reservcustomer/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('reservcustomer/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:30:43 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48037'
+    'REDIRECT_URL' => '/basic/web/reservcustomer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/reservcustomer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101043.434
+    'REQUEST_TIME' => 1438101043
+]
+2015-07-28 16:31:21 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Reservcustomer".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('Reservcustomer', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:31:21 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48117'
+    'REDIRECT_URL' => '/basic/web/Reservcustomer'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/Reservcustomer'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101081.16
+    'REQUEST_TIME' => 1438101081
+]
+2015-07-28 16:31:25 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "ReservCustomer".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('ReservCustomer', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:31:25 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48117'
+    'REDIRECT_URL' => '/basic/web/ReservCustomer'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/ReservCustomer'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101085.752
+    'REQUEST_TIME' => 1438101085
+]
+2015-07-28 16:31:57 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "ReservCustomer".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('ReservCustomer', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:31:57 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48192'
+    'REDIRECT_URL' => '/basic/web/ReservCustomer'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/ReservCustomer'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101117.695
+    'REQUEST_TIME' => 1438101117
+]
+2015-07-28 16:32:27 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "ReservCustomer".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('ReservCustomer', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:32:27 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48253'
+    'REDIRECT_URL' => '/basic/web/ReservCustomer'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/ReservCustomer'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101147.875
+    'REQUEST_TIME' => 1438101147
+]
+2015-07-28 16:32:29 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "ReservCustomer".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('ReservCustomer', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:32:29 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48253'
+    'REDIRECT_URL' => '/basic/web/ReservCustomer'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/ReservCustomer'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101149.138
+    'REQUEST_TIME' => 1438101149
+]
+2015-07-28 16:32:33 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "ReservCustomer/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('ReservCustomer/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:32:33 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48253'
+    'REDIRECT_URL' => '/basic/web/ReservCustomer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/ReservCustomer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101153.337
+    'REQUEST_TIME' => 1438101153
+]
+2015-07-28 16:32:40 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reservcustomer/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('reservcustomer/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:32:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48279'
+    'REDIRECT_URL' => '/basic/web/reservcustomer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/reservcustomer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101160.279
+    'REQUEST_TIME' => 1438101160
+]
+2015-07-28 16:33:20 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reservcustomer/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('reservcustomer/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:33:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48361'
+    'REDIRECT_URL' => '/basic/web/reservcustomer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/reservcustomer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101200.128
+    'REQUEST_TIME' => 1438101200
+]
+2015-07-28 16:33:26 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reservcustomer/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('reservcustomer/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:33:26 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48374'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/reservcustomer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/reservcustomer/index'
+    'PATH_TRANSLATED' => '/var/www/html/reservcustomer/index'
+    'PHP_SELF' => '/basic/web/index.php/reservcustomer/index'
+    'REQUEST_TIME_FLOAT' => 1438101206.323
+    'REQUEST_TIME' => 1438101206
+]
+2015-07-28 16:33:31 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reservcustomer/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('reservcustomer/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:33:31 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48385'
+    'REDIRECT_URL' => '/basic/web/reservcustomer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/reservcustomer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101211.365
+    'REQUEST_TIME' => 1438101211
+]
+2015-07-28 16:34:54 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resrvecustomer".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('resrvecustomer', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:34:54 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48557'
+    'REDIRECT_URL' => '/basic/web/resrvecustomer'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/resrvecustomer'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101294.283
+    'REQUEST_TIME' => 1438101294
+]
+2015-07-28 16:35:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "ResrveCustomer".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('ResrveCustomer', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:35:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48576'
+    'REDIRECT_URL' => '/basic/web/ResrveCustomer'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/ResrveCustomer'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101302.689
+    'REQUEST_TIME' => 1438101302
+]
+2015-07-28 16:35:16 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Reservcustomer/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('Reservcustomer/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:35:16 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48604'
+    'REDIRECT_URL' => '/basic/web/Reservcustomer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/Reservcustomer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101316.045
+    'REQUEST_TIME' => 1438101316
+]
+2015-07-28 16:35:36 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "ReservCustomer/index".' in /var/www/html/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('ReservCustomer/...', Array)
+#1 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-07-28 16:35:36 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8883'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=hbT4N5LEra1XGvZtcgRIvCGBPJepPxpj'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at localhost Port 8883</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8883'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/basic/web/index.php'
+    'REMOTE_PORT' => '48645'
+    'REDIRECT_URL' => '/basic/web/ReservCustomer/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/ReservCustomer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1438101336.171
+    'REQUEST_TIME' => 1438101336
+]
