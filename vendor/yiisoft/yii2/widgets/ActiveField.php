@@ -61,7 +61,7 @@ class ActiveField extends Component
      *
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
-    public $inputOptions = ['class' => 'form-control'];
+    public $inputOptions = ['class' => 'form-control floating-label'];
     /**
      * @var array the default options for the error tags. The parameter passed to [[error()]] will be
      * merged with this property when rendering the error tag.

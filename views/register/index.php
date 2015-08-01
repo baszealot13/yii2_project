@@ -7,33 +7,35 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\ResrveCustomerSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Resrve Customers';
+$this->title = Yii::t('app', 'Resrve Customers');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="resrve-customer-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+      <h1><?= Html::encode($this->title) ?></h1>
+      <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('Create Resrve Customer', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+      <div class="well">
+      <p>
+            <?= Html::a(Yii::t('app', 'Create Resrve Customer'), ['create'], ['class' => 'btn btn-success']) ?>
+      </p>
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
+      <?= GridView::widget([
+            'dataProvider' => $dataProvider,
+            'filterModel' => $searchModel,
+            'tableOptions' => ['class' => 'table'],
+            'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
             'customer_no',
             'customer_code',
-            'customer_id01',
-            'customer_id02',
-            'reference_year_01',
+            // 'customer_id01',
+            // 'customer_id02',
+            // 'reference_year_01',
             // 'reference_year_02',
             // 'reference_year_03',
-            // 'customer_last_name:ntext',
-            // 'customer_first_name:ntext',
+            'customer_first_name',
+            'customer_last_name',
             // 'customer_middle_name:ntext',
             // 'customer_name2:ntext',
             // 'customer_nickname:ntext',
@@ -130,7 +132,8 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'customer_vat_group',
 
             ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
+            ],
+            ]); ?>
+    </div>
 
 </div>

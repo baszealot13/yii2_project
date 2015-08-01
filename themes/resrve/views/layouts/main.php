@@ -4,6 +4,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\themes\resrve\ResrveAsset;
+use yii\web\Session;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -21,12 +22,12 @@ ResrveAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
-
+<?php // echo 'Session: ' . Yii::$app->session->get('sess_customer_no') ?>
 <?php $this->beginBody() ?>
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => 'My Company',
+                'brandLabel' => 'ENCONCEPT',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-static-top',
@@ -35,16 +36,21 @@ ResrveAsset::register($this);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
-                    ['label' => 'Home', 'url' => ['/site/index']],
+                    ['label' => '', 'url' => ['/site/index'], 'linkOptions' => ['class' => 'mdi-action-home']],
                     // ['label' => 'About', 'url' => ['/site/about']],
                     // ['label' => 'Contact', 'url' => ['/site/contact']],
                     // Yii::$app->user->isGuest ?
-                    ['label' => 'Register', 'url' => '#'],
-                    ['label' => 'Login', 'url' => ['/site/login']],
-                    ['label' => 'Profile',
-                        'items' => [
-                             ['label' => 'History', 'url' => '#'],
-                             ['label' => 'Logout', 'url' => '#'],
+                    // ['label' => 'Register', 'url' => ['/register/create']],
+                    !Yii::$app->session->get('sess_customer_no') ?
+                        ['label' => 'Login', 'url' => ['/site/login']]: 
+                        ['label' => '',
+                            'linkOptions' => ['class' => 'mdi-action-account-circle'],
+                            'items' => [
+                                ['label' => 'Edit Profile', 'url' => ['/register/update', 'id' => Yii::$app->session->get('sess_customer_no')]],
+                                ['label' => 'History', 'url' => '#'],
+                                ['label' => 'Logout', 
+                                            'url' => ['/site/logout'],
+                                            'linkOptions' => ['data-method' => 'post']],
                         ],
                     ],
                     // ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
@@ -62,13 +68,6 @@ ResrveAsset::register($this);
             <?= $content ?>
         </div>
     </div>
-
-    <footer class="footer">
-        <div class="container">
-            <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-            <p class="pull-right"><?= Yii::powered() ?></p>
-        </div>
-    </footer>
 
 <?php $this->endBody() ?>
 <script>

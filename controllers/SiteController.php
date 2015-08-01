@@ -8,6 +8,8 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use yii\helpers\Utf8ToHtml;
+use yii\web\Session;
 
 class SiteController extends Controller
 {
@@ -21,7 +23,7 @@ class SiteController extends Controller
                     [
                         'actions' => ['logout'],
                         'allow' => true,
-                        'roles' => ['@'],
+                        'roles' => ['?', '@'],
                     ],
                 ],
             ],
@@ -54,9 +56,11 @@ class SiteController extends Controller
 
     public function actionLogin()
     {
-        if (!\Yii::$app->user->isGuest) {
+        if (Yii::$app->session->get('sess_customer_no')) {
             return $this->goHome();
         }
+        // Yii::$app->session->remove('sess_customer_no');
+        // Yii::$app->session->remove('sess_customer_code');
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
@@ -70,9 +74,12 @@ class SiteController extends Controller
 
     public function actionLogout()
     {
-        Yii::$app->user->logout();
+        Yii::$app->session->remove('sess_customer_no');
+        Yii::$app->session->remove('sess_customer_code');
+        Yii::$app->session->destroy();
+        Yii::$app->session->close();
 
-        return $this->goHome();
+        return $this->redirect('login');
     }
 
     public function actionContact()
