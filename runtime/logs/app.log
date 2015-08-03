@@ -21463,3 +21463,214 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1438615208.4455
     'REQUEST_TIME' => 1438615208
 ]
+2015-08-02 08:31:17 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Migration failed. Directory specified in migrationPath doesn't exist.' in D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php:71
+Stack trace:
+#0 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\controllers\MigrateController.php(93): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\base\Controller.php(149): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#3 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#4 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#5 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#6 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 D:\xampp\htdocs\yii2_project\tests\codeception\bin\yii(19): yii\base\Application->run()
+#8 {main}
+2015-08-02 08:31:17 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANT_HOME' => 'C:\\Users\\zealot13\\Downloads\\apache-ant-1.9.4-bin\\apache-ant-1.9.4'
+    'APPDATA' => 'C:\\Users\\zealot13\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZEALOT13-NB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zealot13'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.7.0_71'
+    'LOCALAPPDATA' => 'C:\\Users\\zealot13\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZEALOT13-NB'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Trend Micro\\AMSP;C:\\Program Files\\MySQL\\MySQL Enterprise Backup 3.11\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.2 & MySQL Utilities 1.5.2 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.2 & MySQL Utilities 1.5.2 1.5\\Doctrine extensions for PHP\\;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Users\\zealot13\\Downloads\\apache-ant-1.9.4-bin\\apache-ant-1.9.4\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Users\\zealot13\\AppData\\Local\\Android\\sdk\\tools;C:\\Users\\zealot13\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;D:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\zealot13\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\zealot13\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\zealot13\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zealot13-NB'
+    'USERNAME' => 'zealot13'
+    'USERPROFILE' => 'C:\\Users\\zealot13'
+    'VBOX_MSI_INSTALL_PATH' => 'E:\\VMW\\'
+    'VISUALSVN_SERVER' => 'D:\\Program Files\\VisualSVN Server\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\'
+    'PHP_SELF' => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\yii'
+    'SCRIPT_NAME' => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\yii'
+    'SCRIPT_FILENAME' => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\yii'
+    'PATH_TRANSLATED' => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1438497077.1734
+    'REQUEST_TIME' => 1438497077
+    'argv' => [
+        0 => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-08-02 08:31:29 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Migration failed. Directory specified in migrationPath doesn't exist.' in D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php:71
+Stack trace:
+#0 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\controllers\MigrateController.php(93): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\base\Controller.php(149): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#3 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#4 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#5 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#6 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 D:\xampp\htdocs\yii2_project\tests\codeception\bin\yii(19): yii\base\Application->run()
+#8 {main}
+2015-08-02 08:31:29 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANT_HOME' => 'C:\\Users\\zealot13\\Downloads\\apache-ant-1.9.4-bin\\apache-ant-1.9.4'
+    'APPDATA' => 'C:\\Users\\zealot13\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZEALOT13-NB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zealot13'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.7.0_71'
+    'LOCALAPPDATA' => 'C:\\Users\\zealot13\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZEALOT13-NB'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Trend Micro\\AMSP;C:\\Program Files\\MySQL\\MySQL Enterprise Backup 3.11\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.2 & MySQL Utilities 1.5.2 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.2 & MySQL Utilities 1.5.2 1.5\\Doctrine extensions for PHP\\;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Users\\zealot13\\Downloads\\apache-ant-1.9.4-bin\\apache-ant-1.9.4\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Users\\zealot13\\AppData\\Local\\Android\\sdk\\tools;C:\\Users\\zealot13\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;D:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\zealot13\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\zealot13\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\zealot13\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zealot13-NB'
+    'USERNAME' => 'zealot13'
+    'USERPROFILE' => 'C:\\Users\\zealot13'
+    'VBOX_MSI_INSTALL_PATH' => 'E:\\VMW\\'
+    'VISUALSVN_SERVER' => 'D:\\Program Files\\VisualSVN Server\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1438497089.2661
+    'REQUEST_TIME' => 1438497089
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-08-02 08:32:19 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Migration failed. Directory specified in migrationPath doesn't exist.' in D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php:71
+Stack trace:
+#0 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\controllers\MigrateController.php(93): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\base\Controller.php(149): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#3 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#4 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#5 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#6 D:\xampp\htdocs\yii2_project\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 D:\xampp\htdocs\yii2_project\tests\codeception\bin\yii(19): yii\base\Application->run()
+#8 {main}
+2015-08-02 08:32:19 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANT_HOME' => 'C:\\Users\\zealot13\\Downloads\\apache-ant-1.9.4-bin\\apache-ant-1.9.4'
+    'APPDATA' => 'C:\\Users\\zealot13\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ZEALOT13-NB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\zealot13'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.7.0_71'
+    'LOCALAPPDATA' => 'C:\\Users\\zealot13\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ZEALOT13-NB'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Trend Micro\\AMSP;C:\\Program Files\\MySQL\\MySQL Enterprise Backup 3.11\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.2 & MySQL Utilities 1.5.2 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5.2 & MySQL Utilities 1.5.2 1.5\\Doctrine extensions for PHP\\;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Users\\zealot13\\Downloads\\apache-ant-1.9.4-bin\\apache-ant-1.9.4\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Users\\zealot13\\AppData\\Local\\Android\\sdk\\tools;C:\\Users\\zealot13\\AppData\\Local\\Android\\sdk\\platform-tools;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;D:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\VisualSVN Server\\bin;D:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\zealot13\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 42 Stepping 7, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2a07'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\zealot13\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\zealot13\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'zealot13-NB'
+    'USERNAME' => 'zealot13'
+    'USERPROFILE' => 'C:\\Users\\zealot13'
+    'VBOX_MSI_INSTALL_PATH' => 'E:\\VMW\\'
+    'VISUALSVN_SERVER' => 'D:\\Program Files\\VisualSVN Server\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\'
+    'PHP_SELF' => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\yii'
+    'SCRIPT_NAME' => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\yii'
+    'SCRIPT_FILENAME' => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\yii'
+    'PATH_TRANSLATED' => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1438497139.0129
+    'REQUEST_TIME' => 1438497139
+    'argv' => [
+        0 => 'D:\\xampp\\htdocs\\yii2_project\\tests\\codeception\\bin\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
