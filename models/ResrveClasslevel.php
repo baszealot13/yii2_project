@@ -86,7 +86,7 @@ class ResrveClasslevel extends \yii\db\ActiveRecord
         ];
     }
 
-    public function ddlClassLevel() 
+    public static function ddlClassLevel() 
     {
         $classlevels = ResrveClasslevel::find()->all();
         $data = array();

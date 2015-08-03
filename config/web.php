@@ -40,8 +40,6 @@ $config = [
         ],
         'view' => [
             'theme' => [
-                // 'basePath' => '@app/themes/default',
-                // 'baseUrl' => '@web/themes/default',
                 'pathMap' => [
                     '@app/views' => '@app/themes/resrve/views',
                 ],
@@ -52,9 +50,9 @@ $config = [
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
-                '<controller:(post|comment)>/<id:\d+>/<action:(create|update|delete)>' => '<controller>/<action>',
-                '<controller:(post|comment)>/<id:\d+>' => '<controller>/view',
-                '<controller:(post|comment)>s' => '<controller>/index',
+                '<controller>/<action>/<id:\d+>' => '<controller>/<action>',
+                '<controller>/<id:\d+>' => '<controller>/view',
+                '<controller>s' => '<controller>/index',
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),

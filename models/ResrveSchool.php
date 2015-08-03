@@ -106,7 +106,7 @@ class ResrveSchool extends \yii\db\ActiveRecord
         ];
     }
 
-    public function ddlSchool() 
+    public static function ddlSchool() 
     {
         $schools = ResrveSchool::find()->all();
         $data = array();

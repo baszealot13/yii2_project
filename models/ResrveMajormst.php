@@ -58,7 +58,7 @@ class ResrveMajormst extends \yii\db\ActiveRecord
         ];
     }
 
-    public function ddlMajormst() 
+    public static function ddlMajormst() 
     {
         $majormsts = ResrveMajormst::find()->all();
         $data = array();

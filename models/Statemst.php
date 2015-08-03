@@ -94,7 +94,7 @@ class Statemst extends \yii\db\ActiveRecord
         ];
     }
 
-    public function ddlStatemst() 
+    public static function ddlStatemst() 
     {
         $statemsts = Statemst::find()->all();
         $data = array();
